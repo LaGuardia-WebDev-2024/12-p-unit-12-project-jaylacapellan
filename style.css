@@ -20,3 +20,7 @@ hr {
   height: 5px;
   background-color: black;
 }
+
+h1 {
+  text-align: center;
+}
