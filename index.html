@@ -28,9 +28,9 @@ Select ONE Additional Feature to Add
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
+          <option value="movie1">how to loose a guy in 10 days</option>
+          <option value="movie2">27 dresses</option>
+          <option value="movie3">to all the boys ive loved before</option>
           <option value="movie4">movie 4</option>
         </select>
       </label>
@@ -41,20 +41,20 @@ Select ONE Additional Feature to Add
     </div>
     <hr />
     <!-- Book Question -->
-    <form id="book-form">
+    <form id="food-form">
       <label>
-        📖 What is my favorite book?
-        <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+        🍽 What is my favorite food?
+        <select id="food-answer">
+          <option value="food1">food 1</option>
+          <option value="food2">food 2</option>
+          <option value="food3">food 3</option>
+          <option value="food4">food 4</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Food Answer</button>
     </form>
-    <div id="book-result">
-      <p id="book-text"></p>
+    <div id="food-result">
+      <p id="food-text"></p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -74,18 +74,18 @@ Select ONE Additional Feature to Add
         }
       });
 
-      //=======================Book Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      //=======================Food Question jQuery Code
+      $("#food-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#food-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+        if (answer === "food3") {
+          $("#food-text").text("YESSSS!");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#food-text").text("whomp whomp try again!");
         }
       });
       
