@@ -38,6 +38,7 @@ Select ONE Additional Feature to Add
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
+      <img class="movie-pic">
     </div>
     <hr />
     <!-- Book Question -->
@@ -60,6 +61,8 @@ Select ONE Additional Feature to Add
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+
+      
       
       //========================Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
@@ -70,9 +73,11 @@ Select ONE Additional Feature to Add
 
         if (answer === "movie1") {
           $("#movie-text").text("YESSSS!");
+          $(".movie-pic").attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDiU4IPdN1zWse_2IGyZsRCNqVD5mJONkYUw&s");
         } 
         else {
-          $("#movie-text").text("Try Again!");
+          $("#movie-text").text("not quite!");
+          $(".movie-pic").attr("src","https://media.tenor.com/odPjtIl41B8AAAAe/i-am-waiting.png");
         }
       });
 
