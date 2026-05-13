@@ -56,6 +56,7 @@ Select ONE Additional Feature to Add
     </form>
     <div id="food-result">
       <p id="food-text"></p>
+      <img class="food-pic">
     </div>
 
 
@@ -90,6 +91,7 @@ Select ONE Additional Feature to Add
 
         if (answer === "food3") {
           $("#food-text").text("YESSSS!");
+           $(".food-pic").attr("src","https://www.shutterstock.com/image-photo/assortment-baked-goods-displayed-on-600nw-2575371219.jpg");
         } 
         else {
           $("#food-text").text("whomp whomp try again!");
