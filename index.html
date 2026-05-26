@@ -25,6 +25,7 @@ Select ONE Additional Feature to Add
   </head>
   <body>
     <h1>quiz about jayla🙃</h1>
+    
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
@@ -65,9 +66,8 @@ Select ONE Additional Feature to Add
     <button type="submit" id="button1">Click for surprise</button>
     <button type="submit" id="button2">CLICK ME AFTER!!</button>
 
-    <h1 id="funnypic" style="display: block;">yes</h1>
-    
-
+    <br>
+    <img id="pic1" src="https://i.pinimg.com/236x/6a/94/9f/6a949ff93661ff0abc5fc94817f631ce.jpg">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -108,12 +108,22 @@ Select ONE Additional Feature to Add
         }
       });
       
-
+      var $pic = $("#pic1");
+      var $h1 = $()
 
       //=======================Extra buttons
       $("#button1").click(function(){
-        
-      })
+        $pic.fadeOut(2000);
+        $h1.fadeOut();
+      });
+
+      $("#button2").click(function(){
+        $("#pic1").animate({
+          width: "140px",
+          marginLeft: "10px",
+          borderWidth: "3px",
+        }, 2000);
+      });
 
     </script>
   </body>
